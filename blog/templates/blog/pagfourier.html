@@ -1,14 +1,15 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="js/custom-file-input.js"></script>
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/CSSHide.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/CSSHide.css" />-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poppins|Raleway|Source+Code+Pro" rel="stylesheet">
 		<link href="css/imag.css" rel="stylesheet" type="text/css">
-
+		<link rel="stylesheet" href="{% static 'css/CSSHide.css' %}">
 		<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 	</head>
 
@@ -60,6 +61,7 @@ $(document).ready(function() {
 </script>
 
 	<body>
+	
 	<div id='loading'><img src='https://68.media.tumblr.com/3b2be241f2b7e636bee77ea78469a5d6/tumblr_odr4f9f2yQ1u7o3wio1_1280.gif' style='ALGIN:center; margin:0 auto; position: absolute; top: 5%; left: 35%; margin: -30px 0 0 -30px;'></div>
 
 	<div class="hide64">
@@ -137,6 +139,7 @@ $(document).ready(function() {
 		 </div> <!-- -->
 		</div>
 		<script src="js/custom-file-input.js"></script>
+
 	</body>
 
 </html>
